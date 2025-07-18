@@ -1,36 +1,46 @@
-# Unity generated folders
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Ll]ogs/
+# === Unity Generated Folders ===
+# (these can all be re‑built by Unity)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
 
-# Unity generated files
-*.unityproj
-*.unityuser
-*.user
+# === Unity Generated Files ===
+# (project and solution files are fine to commit, but ignore caches/debug)
 *.pidb
 *.booproj
-*.suo
-*.sln.docstates
+*.svd
+*.pdb
+*.mdb
 *.opendb
 *.VC.db
 *.sdf
 
-# Unity specific ignore files (usually within project folders)
-/Assets/**/*.meta
-/Packages/**/*.meta
-/ProjectSettings/**/*.meta
-/UserSettings/**/*.meta
-/EditorSettings/**/*.meta
+# Visual Studio / Rider / MonoDevelop
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.unityuser
+*.csproj.user
+*.csproj.DotSettings
+*.DotSettings.user
 
-# OS generated files
+# === Crash Reports, Debug, Logs ===
+*.log
+*.tmp
+
+# === OS Generated Files ===
 .DS_Store
 Thumbs.db
 
-# Visual Studio Code specific
+# === IDE / Editor Folders ===
 .vscode/
+*.code-workspace
+.idea/
 
-# Other temporary files
-*.tmp
-*.log
+# === Asset Store Tools (optional) ===
+/Assets/AssetStoreTools*
