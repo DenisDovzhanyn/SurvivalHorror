@@ -1,0 +1,36 @@
+# Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Ll]ogs/
+
+# Unity generated files
+*.unityproj
+*.unityuser
+*.user
+*.pidb
+*.booproj
+*.suo
+*.sln.docstates
+*.opendb
+*.VC.db
+*.sdf
+
+# Unity specific ignore files (usually within project folders)
+/Assets/**/*.meta
+/Packages/**/*.meta
+/ProjectSettings/**/*.meta
+/UserSettings/**/*.meta
+/EditorSettings/**/*.meta
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code specific
+.vscode/
+
+# Other temporary files
+*.tmp
+*.log
