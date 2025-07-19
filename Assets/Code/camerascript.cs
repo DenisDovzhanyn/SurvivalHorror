@@ -3,17 +3,14 @@ using UnityEngine;
 
 public class camerascript : MonoBehaviour
 {
-    GameObject[] cameraPositions;
-    Dictionary<Collision, string> enteredSides;
     Rigidbody player;
-    Camera camera;
+    Camera cam;
     readonly int CAMERA_TRANSITION_LAYER = 7;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.Find("player").GetComponent<Rigidbody>();
-        camera = Camera.main;
-        cameraPositions = GameObject.FindGameObjectsWithTag("CameraPosition");
+        cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -24,7 +21,7 @@ public class camerascript : MonoBehaviour
 
     void LateUpdate()
     {
-        camera.transform.LookAt(player.transform.position);
+        cam.transform.LookAt(player.transform.position);
     }
 
     void OnTriggerExit(Collider other)
@@ -37,7 +34,7 @@ public class camerascript : MonoBehaviour
 
         // position one should always be opposite of the transition volumes forward
         // meaning the volume should always be facing in the direction that progresses deeper into the map
-        if (dot < 0) camera.transform.position = cameraPositions.cameraPositionOne.transform.position;
-        else camera.transform.position = cameraPositions.cameraPositionTwo.transform.position;
+        if (dot < 0) cam.transform.position = cameraPositions.cameraPositionOne.transform.position;
+        else cam.transform.position = cameraPositions.cameraPositionTwo.transform.position;
     }
 }
