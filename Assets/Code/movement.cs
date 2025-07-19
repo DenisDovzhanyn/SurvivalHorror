@@ -24,7 +24,8 @@ public class movement : MonoBehaviour
         if (moveVector != Vector2.zero)
         {
             rb.AddForce(camForward.normalized * moveVector.y + camRight.normalized * moveVector.x, ForceMode.VelocityChange);
-            rb.rotation = Quaternion.LookRotation(rb.linearVelocity.normalized);
+            Vector3 linearVelocityNoY = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            rb.rotation = Quaternion.LookRotation(linearVelocityNoY.normalized);
         }
     }
 

@@ -8,12 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: sheet
-    second: {fileID: 2100000, guid: 5468bada7725d8d458652d812056d554, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: sheet.001
-    second: {fileID: 2100000, guid: 07cf9b08bda9a684d89dfd59f831ea81, type: 2}
+    second: {fileID: 2100000, guid: d1a89d2848efa1c44ba1be65d44dcffe, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
